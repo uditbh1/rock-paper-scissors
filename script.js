@@ -53,24 +53,26 @@ function game() {
   console.log(`user selection ${userSelection}`);
   console.log(playRound(compSelection, userSelection));
 }
-game();
-game();
-game();
-game();
-game();
-if (compScore > userScore) {
-  console.log("you loose");
-  alert("you loose");
-  console.log(`comp score final ${compScore}`);
-  console.log(`user score final ${userScore}`);
-} else if (compScore < userScore) {
-  console.log("you win");
-  alert("you win");
-  console.log(`comp score final ${compScore}`);
-  console.log(`user score final ${userScore}`);
-} else if (compScore == userScore) {
-  console.log("draw");
-  alert("draw");
-  console.log(`comp score final ${compScore}`);
-  console.log(`user score final ${userScore}`);
-}
+// game();
+// game();
+// game();
+// game();
+// game();            //removing 5 times calling of the game
+let result = (compScore, userScore) => {
+  if (compScore > userScore) {
+    console.log("you loose");
+    alert("you loose");
+    console.log(`comp score final ${compScore}`);
+    console.log(`user score final ${userScore}`);
+  } else if (compScore < userScore) {
+    console.log("you win");
+    alert("you win");
+    console.log(`comp score final ${compScore}`);
+    console.log(`user score final ${userScore}`);
+  } else if (compScore == userScore) {
+    console.log("draw");
+    alert("draw");
+    console.log(`comp score final ${compScore}`);
+    console.log(`user score final ${userScore}`);
+  }
+};
