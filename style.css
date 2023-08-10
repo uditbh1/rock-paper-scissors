@@ -7,13 +7,50 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
+h1{
+    margin-bottom:0;
+}
+h3{
+    display: flex;
+    gap:15px;
+}
+#reset{
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: white;
+    color: green;
+    border-color: green;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.name{
+    display: flex;
+    gap:2px;
+}
+.userBox,.botBox,.tieBox{
+    height:20px;
+    width:20px;
+    background-color: blue;
+}
+.userBox{
+    background-color: green;
+}
+.botBox{
+    background-color: red;
+}
+.tieBox{
+    background-color: black;
+}
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: #111645;
     width: 1200px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: 280px;
+    margin: 20px 20px 0px 20px;
 }
 .card{
     background-color: white;
@@ -22,11 +59,11 @@ body{
     flex-direction: column;
     padding: 50px 50px 0px 50px;
     align-items: center;
-    /* min-width: 20%;
-    width:70%; */
     width: 1200px;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
     justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 .score-header{
     display: flex;
@@ -53,7 +90,7 @@ body{
 .imgs-container{
     display: flex;
     gap: 50px;
-    padding:30px 0px;
+    padding:30px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -61,21 +98,42 @@ body{
 .imgs{
     border-radius: 460px;
     padding: 2px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 200px;
+    max-height: 200px;
+    
 }
 img{
-    /* height:160px;
-    width: 160px; */
     border-radius: 460px;
-    /* border: 2.5px solid #111645; */
+    overflow: hidden;
 }
-.result-text,.results-header{
+.results{
+    align-content: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.results{
-    padding-bottom: 100px;
-}
 .footer{
+    padding-top: 100px;
     color: grey;
+}
+.user,.tie,.comp{
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.user{
+    border: 4px solid green;
+    background-color: green;
+}
+.tie{
+    border: 4px solid black;
+    background-color: black;
+}
+.comp{
+    border: 4px solid red;
+    background-color: red;
 }

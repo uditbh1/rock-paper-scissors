@@ -7,32 +7,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="topG">
       <h1>Rock Paper Scissors</h1>
-      <h2>First to score 5 points wins the match</h2>
+      <h2>First to score 5 points wins the game</h2>
+      <h3>
+        <div class="name">
+          <div class="userBox"></div>
+          <div class="name">user</div>
+        </div>
+        <div class="name">
+          <div class="botBox"></div>
+          <div class="name">bot</div>
+        </div>
+        <div class="name">
+          <div class="tieBox"></div>
+          <div class="name">tie</div>
+        </div>
+      </h3>
+      <button id="reset">Reset</button>
     </div>
     <div class="card">
       <div class="score-header">
         <div class="header-text">You</div>
-        <div class="user-score">0</div>
+        <div class="user-score" id="userScoreHtml">0</div>
         <div class="colon">:</div>
-        <div class="comp-score">0</div>
+        <div class="comp-score" id="compScoreHtml">0</div>
         <div class="header-text">Bot</div>
       </div>
       <div class="imgs-container">
         <button class="imgs">
-          <img src="./images/rock icon.jpg" alt="rock icon" />
+          <img src="./images/rock icon.jpg" alt="rock" />
         </button>
         <button class="imgs">
-          <img src="./images/paper icon.jpg" alt="paper icon" />
+          <img src="./images/paper icon.jpg" alt="paper" />
         </button>
         <button class="imgs">
-          <img src="./images/scissors icon.jpg" alt="scissors icon" />
+          <img src="./images/scissors icon.jpg" alt="scissors" />
         </button>
       </div>
       <div class="results">
-        <div class="results-header">Results</div>
-        <div class="result-text">Results pending....</div>
+        <div class="results-header" id="resultsHeader">Play the game</div>
+        <div class="result-text" id="resultsText">
+          Select any of the above to play the game
+        </div>
       </div>
       <div class="footer">developed by Whitefang</div>
     </div>
